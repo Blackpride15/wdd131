@@ -43,14 +43,6 @@ header {
     color: white;
     grid-column: 1 / 4;
 }
-/* header {
-  background: rgb(32, 32, 32);
-  /* padding: 2rem; */
-  /* grid-column: 1 / 1;
-  height: 100%;
-
-} */ */
-
 
 .header-Content{
     background-color:#1c1cef ;  
@@ -90,23 +82,6 @@ h5{
     text-align: center;
 }
 
-
-
-/* .left-sidebar {
-  background: rgb(171, 177, 179);
-  grid-column: 1 / 2;
-  width: 80%;
-}
-
-.
-
-.right-sidebar {
-  background: rgb(255, 255, 253);
-  grid-column: 2 / 2;
-  margin-top: 400px;
-  width: 40px;
-} */
-
 .footer-Content{
     color: #f6f6f8;
     font-family: Roboto;
@@ -121,7 +96,3 @@ footer {
   grid-column: 1 / 4;
 }
 
-/* .left-sidebar,
-.right-sidebar {
-  padding: 1rem;
-} */
