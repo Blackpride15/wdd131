@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #164e70;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+nav {
+	background-color: #333333;
+	margin: 0 auto;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin: 10px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+.about-header {
+    background-color: #164e70;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+.about-location {
+    padding: 0 20px;
+}
+.web-resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.web-resources li {
+    margin: 10px 0;
+}
+
+.web-resources a {
+    text-decoration: none;
+    color: #0c4c92;
+}
+
+.web-resources a:hover {
+    text-decoration: underline;
+
+}
+
+.resources-link {
+   padding: 20px;
+}
+
+footer {
+    background-color: #164e70;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .card img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
