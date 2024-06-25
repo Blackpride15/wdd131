@@ -11,8 +11,8 @@
 
     --nav-background-color: #d7d7db;
     --nav-link-color: #181B1A;
-    --nav-hover-link-color: #AD8598;
-    --nav-2-hover-link-color: #c2a3b2;
+    --nav-hover-link-color: #9286f4;
+    --nav-2-hover-link-color: #9286f4;
 }
 
 body {
@@ -43,14 +43,17 @@ h1 {
     font-size: 3rem;
     text-decoration: none;
     padding: 0 1.5rem 0 0;
-    color: var(--accent2-color);
+    /* color: var(--accent2-color); */
     position: absolute;
     top: 0;
     right: 0;
+    background-color: rgb(41, 32, 106);
 }
 
 #menu::before {
     content: "≡";
+    color: #f4f3fc;
+
 }
 
 #menu:hover {
@@ -86,6 +89,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 0;
+    background-color: #29206a;
 }
 
 .show li {
@@ -100,11 +104,13 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
+    background-color: #29206a;
 }
 
 .navigation.show+h1,
 h1.show {
     display: none;
+    background-color: rgb(41, 32, 106);
 }
 
 main {
@@ -152,5 +158,5 @@ footer {
 footer p {
     text-align: center;
     font-family: var(--paragraph-font);
-    
+
 }
