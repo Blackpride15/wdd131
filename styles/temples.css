@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color:#29206a;
+    --primary-color:#060410;
     --secondary-color: #aba0ff;
     --accent1-color: #181B1A;
     --accent2-color: #ffffff;
@@ -23,7 +23,7 @@ body {
     }
 
 header {
-    background-color: #29206a;
+    background-color: #060410;
     align-items: center;
     /* box-shadow: 0 0 30px #333; */
 }
@@ -46,7 +46,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgb(41, 32, 106);
+    background-color: #060410;
 }
 
 #menu::before {
@@ -88,7 +88,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 0;
-    background-color: #29206a;
+    background-color: #060410;
 }
 
 .show li {
@@ -103,13 +103,13 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #29206a;
+    background-color: #060410;
 }
 
 .navigation.show+h1,
 h1.show {
     display: none;
-    background-color: rgb(41, 32, 106);
+    background-color: #060410;
 }
 
 main {
@@ -149,7 +149,7 @@ figcaption {
 }
 
 footer {
-    background-color: rgb(41, 32, 106);;
+    background-color: #060410;
     color: var(--accent2-color);
     padding: .1rem;
 }
