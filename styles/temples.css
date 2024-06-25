@@ -1,222 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-    body {
+:root {
+    --primary-color:#29206a;
+    --secondary-color: #aba0ff;
+    --accent1-color: #181B1A;
+    --accent2-color: #ffffff;
+
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #d7d7db;
+    --nav-link-color: #181B1A;
+    --nav-hover-link-color: #AD8598;
+    --nav-2-hover-link-color: #c2a3b2;
+}
+
+body {
       max-width: 100%;
       font-family: "Roboto", sans-serif;
       margin: 2px;
       padding: 0%;
       border: 1.5px solid black;
     }
-  
-    header {
-      background-color: rgb(41, 32, 106);
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      text-align: center;
-      color: white;
-    }
 
-    h1 {
-      font-size: 30px;
-      text-align: center;
-      margin-bottom: 2px;
-      font-family: "Nunito", sans-serif;
-      font-weight: bold;
-      font-style: normal;
-    }
+header {
+    background-color: #29206a;
+    align-items: center;
+    /* box-shadow: 0 0 30px #333; */
+}
 
-    .navigation {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-    }
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem 0 0 1rem;
+    margin: 0 0 1rem 0
+}
 
-    .navigation a {
-      display: none;
-      margin-top: 5px;
-      margin-bottom: 5px; 
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+#menu {
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 1.5rem 0 0;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-    nav ul a:link, a:visited, a:active {
-      text-decoration:none;
-      color: white;
-    }
-  
-    nav ul a:visited {
-      color: white;
-    }
-  
-    #menu {
-      font-size: 20px;
-      border: 0;
-      background: none;
-      color: white;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
+#menu::before {
+    content: "≡";
+}
 
-    #menu::before {
-      content: "☰";
-  }
+#menu:hover {
+    color: var(--nav-2-hover-link-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: .75rem;
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.navigation a:hover {
+    color: var(--nav-2-hover-link-color);
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation.show+h1,
+h1.show {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.content.wrapper {
+    padding: 0;
+    gap: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 3rem 0 .5rem 0;
+    margin: 0;
+}
+
+.image-grid {
+    display: grid;
+    padding: 0 0 2rem 0;
+    gap: 0;
+}
+
+.image-grid img {
+    height: 55vw;
+}
+
+figcaption {
+    font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(41, 32, 106);;
+    color: var(--accent2-color);
+    padding: .1rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--paragraph-font);
     
-    #menu.open::before {
-      content: "✖";
-    }
-
-    .open a {
-      display: block;
-    }
-    
-    .open a:hover {
-      color: red ;
-  }
-
-    h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 10px
-    }
-    
-    .card-1 {
-      display: flex;
-      flex-direction:column;
-      margin: auto;
-      text-align: center;
-    }
-
-    .card-1 img:hover {
-      box-shadow: 3px 3px 10px rgb(11, 11, 11);
-    }
-
-
-    figure img {
-      max-width: 100%;
-    }
-
-    footer {
-      background-color: rgb(41, 32, 106); 
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      grid-column: 1 / 4;
-      color: white;
-      font-size: 15px;
-      text-align: center; 
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-
-  @media (min-width: 600px) and (max-width: 740px) {
-    
-    body {
-      max-width: 100%;
-      font-family: "Roboto", sans-serif;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      margin-bottom: 5px; 
-      text-align: center;
-    }
-
-    h1 {
-        font-size: 30px;
-        text-align: center;
-      }
-  
- 
-    .navigation {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding-inline-start: 5px;
-    }
-
-    .navigation a {
-      display: none;
-      margin-top: 5px;
-      margin-bottom: 5px; 
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-   
-    nav ul a:link, a:visited, a:active {
-      text-decoration:none;
-      color: white;
-    }
-  
-    nav ul a:visited {
-      color: white;
-    }
-
-     #menu {
-        font-size: 20px;
-        border: 0;
-        background: none;
-        color: white;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-      }
-
-    #menu::before {
-      content: "☰";
-    }
-    
-    #menu.open::before {
-      content: "✖";
-    }
-
-    .open a {
-      display: block;
-    }
-    
-    .open a:hover {
-      color: red ;
-  }
-
-    h2 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 10px
-    }
-  
-    .card-1{
-      font-size: 15px;
-      line-height: 20px;
-      margin: auto;
-      display: flex;
-      flex-direction:column;
-      margin: auto;
-      text-align: center;
-    }
-
-    .card-1 img:hover {
-      box-shadow: 3px 3px 10px rgb(11, 11, 11);
-    }
-
-    
-    figure img {
-        max-width: 75%;
-    }
-
-    footer {
-      background-color: rgb(41, 32, 106); 
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      grid-column: 1 / 4;
-      color: white;
-      font-size: 15px;
-      text-align: center; 
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-  }
-
-  
+}
