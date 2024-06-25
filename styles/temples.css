@@ -9,9 +9,9 @@
     --paragraph-font: 'Inter', sans-serif;
 
     --nav-background-color: #d7d7db;
-    --nav-link-color: #181B1A;
+    --nav-link-color: #1e1f1f;
     --nav-hover-link-color: #9286f4;
-    --nav-2-hover-link-color: #9286f4;
+    --nav-2-hover-link-color: #1402a0;
 }
 
 body {
@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-    font-family: var(--heading-font);
+    font-family:"Roboto", sans-serif;
     color: var(--accent2-color);
     font-size: 1.5rem;
     text-align: left;
@@ -75,7 +75,8 @@ h1 {
     color: var(--accent2-color);
     text-align: center;
     padding: .75rem;
-    font-family: var(--paragraph-font);
+    font-family:"Roboto", sans-serif;;
+    font-size: 18px;
     font-weight: 600;
     transition: 0.25s;
 }
@@ -97,7 +98,7 @@ h1 {
 
 #menu.show::before {
     content: "X";
-    font-family: var(--paragraph-font);
+    font-family: "Roboto", sans-serif;;
     font-size: 2rem;
     padding: 1.2rem 1.5rem;
     position: absolute;
@@ -126,7 +127,8 @@ main {
 h2 {
     display: flex;
     justify-content: center;
-    font-family: var(--heading-font);
+    font-family: "Roboto", sans-serif;
+    font-size:x-large;
     color: var(--primary-color);
     padding: 3rem 0 .5rem 0;
     margin: 0;
@@ -146,6 +148,7 @@ figcaption {
     font-family: var(--paragraph-font);
     color: var(--nav-link-color);
     text-align: center;
+    font-weight: 600;
 }
 
 footer {
@@ -156,6 +159,7 @@ footer {
 
 footer p {
     text-align: center;
-    font-family: var(--paragraph-font);
+    font-family: "Roboto", sans-serif;
+    font-size: large;
 
 }
