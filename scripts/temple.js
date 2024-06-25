@@ -9,13 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // // Get the current year
     // document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-    // Get the last modified date of the document
-    const lastModifiedSpan = document.getElementById('last-modified');
-    if (lastModifiedSpan) {
-        const lastModified = new Date(document.lastModified);
-        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        lastModifiedSpan.textContent = lastModified.toLocaleDateString('en-US', options);
-    }
-    
+    window.onload = function () {
+        // Display current date and time
+        var footerDateTime = document.getElementById('currentDateTime');
+        var now = new Date();
+        var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        footerDateTime.textContent = now.toLocaleString('en-US', options);
+
+        // Display last modified date and time
+        const lastModifiedSpan = document.getElementById('lastmodified');
+        if (lastModifiedSpan) {
+            const lastModified = new Date(document.lastModified);
+            const lastModifiedOptions = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            lastModifiedSpan.textContent = lastModified.toLocaleDateString('en-US', lastModifiedOptions) + " " + lastModified.toLocaleTimeString('en-US', lastModifiedOptions);
+        }
+    };
 
 });
