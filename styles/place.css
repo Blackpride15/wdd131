@@ -1,6 +1,6 @@
 :root {
     --primary-color: #03268f;
-    --secondary-color: #fdf1a2;
+    --secondary-color: #a2d5fd52;
     --text-color: #ffffff;
     --background-color: #f4f4f9;
 }
@@ -112,7 +112,7 @@ footer {
     padding: 1em 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
     main .hero img {
     width: 100%;
@@ -140,8 +140,13 @@ footer {
 
     .icon {
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 16px;
+        height:16px;
+    }
+
+    main .hero img .icon{
+        width: 20px;
+        height: 20px;
     }
 
     .data {
@@ -152,4 +157,33 @@ footer {
     content : "";
     padding-left:1rem;
 }
+
+.hero img {
+        height: auto;
+    }
+
+    section .info {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .data,
+    .weather {
+        width: 90%;
+        margin: 1em auto;
+        position: static;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+
+
+
+
 }
