@@ -1,0 +1,78 @@
+.project>p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+.projects {
+    width: 968px;
+    padding: 64px 50.2px 64px 50.2px;
+    gap: 28.8px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.project_box {
+    width: 200px;
+    padding: 17px 30.75px 17px 30.73px;
+    gap: 0px;
+    border: 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #0000001A;
+    gap: 8px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+}
+
+.project_box>img {
+    width: 38px;
+    height: 38px;
+}
+
+.project_view {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.project_view img{
+    width: 16px;
+    height: 16px;
+}
+
+.projects_container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: var(--accent2-color);
+    padding: .1rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+
+}

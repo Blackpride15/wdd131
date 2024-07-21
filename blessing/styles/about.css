@@ -1,0 +1,162 @@
+.about {
+    width: 968px;
+    margin: auto;
+}
+
+.about_details {
+    display: flex;
+    padding: 96px 0px 32px 0px;
+    gap: 0px;
+    opacity: 0px;
+    align-items: center;
+    height: Fixed (480px)px;
+    gap: 32px;
+    opacity: 0px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.about_summary {
+    display: flex;
+    gap: 10px;
+}
+
+.about_summary .box .title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.about_image img {
+    width: 350px;
+    height: 349.67px;
+    gap: 0px;
+    border-radius: 24px;
+    opacity: 0px;
+    object-fit: contain;
+}
+
+.about_summary .box {
+    width: 140px;
+    height: 100px;
+    padding: 17px 20px 19px 20px;
+    gap: -5px;
+    border-radius: 12px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: center;
+
+}
+
+.about_summary .box p {
+    margin: 0px;
+}
+
+.about_summary .box img {
+    width: 18px;
+    height: 18px;
+}
+
+.about_description {
+    width: 395px;
+    left: -1px;
+    gap: 30px;
+    opacity: 0px;
+}
+
+.skill {
+    width: 968px;
+    margin: auto;
+    padding: 96px 0px 32px 0px;
+}
+
+.skill .boxes {
+    width: 300px;
+    padding: 33px 49.06px 33px 49.06px;
+    border: 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #0000001A;
+
+
+}
+
+
+.skill .details .details_box {
+    display: flex;
+    align-items: start;
+}
+
+.skill .details .details_box p {
+    margin: 0px;
+}
+
+.skill .details .details_box .text {
+    margin: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.skill .details .details_box div>p {
+    margin: 0px;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    color: #757575;
+}
+
+.skill .details .details_box img {
+    width: 16px;
+    height: 16px;
+}
+
+.skill .flex {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    padding: 64px 110px 0px 110px;
+    gap: 48px;
+    opacity: 0px;
+
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 350px;
+    padding-top: 20px;
+}
+
+.head {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+
+}
+
+footer {
+    background-color: #ffffff;
+    color: var(--accent2-color);
+    padding: .1rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+
+}
