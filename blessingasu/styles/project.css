@@ -13,11 +13,6 @@
     gap: 28.8px;
     opacity: 0px;
     margin: auto;
-    @media screen and (max-width: 480px){
-        width: 90%;
-        overflow: hidden;
-        padding: 68px 0px;
-      }
 }
 
 .project_box {
@@ -35,9 +30,6 @@
     line-height: 21px;
     text-align: left;
     color: #333333;
-    @media screen and (max-width: 480px){
-       width: 90%;
-       }
 }
 
 .project_box>img {
@@ -64,11 +56,6 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    overflow: hidden;
-    @media screen and (max-width: 480px){
-       display: flex;
-       flex-direction: column;
-      }
 }
 
 .projects {

@@ -1,11 +1,6 @@
 .about {
     width: 968px;
     margin: auto;
-    overflow: hidden;
-    @media screen and (max-width: 480px){
-      width: 100%;
-
-       }
 }
 
 .about_details {
@@ -17,25 +12,14 @@
     height: Fixed (480px)px;
     gap: 32px;
     opacity: 0px;
+    max-width: 1440px;
     margin: auto;
-    @media screen and (max-width: 480px){
-       display: flex;
-       flex-direction: column;
-       gap:20px;
-       padding: 0px 0px;
-       margin: 0px;
-
-      }
 }
 
-#desc{
-    width: 95%;
-}
+
 .about_summary {
     display: flex;
     gap: 10px;
-    flex-wrap:wrap;
-    
 }
 
 .about_summary .box .title {
@@ -47,7 +31,7 @@
 }
 
 .about_image img {
-    width: 100%;
+    width: 350px;
     height: 349.67px;
     gap: 0px;
     border-radius: 24px;
@@ -68,12 +52,6 @@
     background: #FFFFFF;
     justify-content: center;
 
-    @media screen and (max-width: 480px){
-        width: 40%;
-
-        
-    }
-
 }
 
 .about_summary .box p {
@@ -90,38 +68,12 @@
     left: -1px;
     gap: 30px;
     opacity: 0px;
-    text-wrap: wrap;
-
-    @media screen and (max-width: 480px){
-       width: 100%;
-       padding: 0px 20px;
-
-    }
-}
-.about_description .hero_button{
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-#desc {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
 }
 
 .skill {
     width: 968px;
     margin: auto;
     padding: 96px 0px 32px 0px;
-
-    @media screen and (max-width: 480px){
-       width: 90%;
-       padding: 68px 0px;
-    }
-    
 }
 
 .skill .boxes {
@@ -131,10 +83,7 @@
     opacity: 0px;
     background: #FFFFFF;
     border: 1px solid #0000001A;
-    @media screen and (max-width: 480px){
-        width: 90%;
-        padding: 20px;
-     }
+
 
 }
 
@@ -179,26 +128,14 @@
     padding: 64px 110px 0px 110px;
     gap: 48px;
     opacity: 0px;
-    @media screen and (max-width: 480px){
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0px 0px;
-        }
 
 }
 
 .details {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 350px;
     padding-top: 20px;
-    @media screen and (max-width: 480px){
-       display: flex;
-       flex-direction: column;
-       gap: 20px;
-       width: 90%;
-        }
 }
 
 .head {

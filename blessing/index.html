@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,177 +8,218 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/project.js" defer></script>
 </head>
+
 <body>
-    <div class="header">
-        <h1>Blessing Aniedi</h1>
-        <div class="navigation">
+    <div id="loaderBody">
+        <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36"
+                stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round"
+                transform="rotate(-90,100,100)" />
+            <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36"
+                stroke-dasharray="1 165" stroke-linecap="round" />
+        </svg>
+    </div>
+    <div id="main">
+        <div class="header">
+            <h1>Blessing Aniedi</h1>
+            <div onclick="toggleNav()" id="menu">
+                <img class="menu_image" src="images/menu.png" alt="">
+            </div>
+            <div class="navigation">
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./about.html">About</a></p>
+                <p><a href="./project.html">Projects</a></p>
+                <p><a href="./contact.html">Contact</a></p>
+            </div>
+        </div>
+        <div id="nav">
             <p><a href="./index.html">Home</a></p>
             <p><a href="./about.html">About</a></p>
             <p><a href="./project.html">Projects</a></p>
             <p><a href="./contact.html">Contact</a></p>
         </div>
-    </div>
 
-    <div class="hero">
-       <div class="socials">
-        <img src="images/email.png" alt="">
-        <img src="images/twitter.png" alt="">
-        <img src="images/linkedn.png" alt="">
-       </div>
-       <div class="description">
-         <h1>Blessing Aniedi <img src="images/wave.png" alt=""></h1>
-         <div id="name"><div> </div>Product Designer</div>
-         <p>I'm a UX/UI Designer with a proven ability to design 
-            user-centered experiences that achieve both business 
-            goals and user satisfaction. I possess a strong foundation
-            in design principles and leverage user research to craft 
-            strategic design solutions. I'm well-versed in a comprehensive
-            design toolset to deliver exceptional interfaces
-        </p>
-        <div class="hero_button">
-            <p>Say Hello</p>
-            <img src="images/send.png" alt="">
-        </div>
-       </div>
-       <div class="hero_image">
-        <img src="images/blessingim.jpeg" alt="">
-       </div>
-    </div>
-
-    <div class="qualification">
-        <h1>Qualification</h1>
-        <p>My Personal Journey</p>
-        <div class="details">
-            <div class="details_header">
-                <div class="flex">
-                    <img src="images/education.png" alt="">
-                    <p>Education</p>
-                </div>
-                <div class="flex">
-                    <img src="images/experience.png" alt="">
-                    <p>Experience</p>
-                </div>
+        <div class="hero">
+            <div class="socials">
+                <img src="images/email.png" alt="">
+                <img src="images/twitter.png" alt="">
+                <img src="images/linkedn.png" alt="">
             </div>
-            <div id="box">
-                <div class="box">
-                    <div class="left">
-                        <h1>BYU Idaho</h1>
-                        <p>Heathrow Cyber<br/>
-                            Services, UK.<br/>
-                            2023
-                        </p>
-                    </div>
-                    <div class="dot"></div>
-                    <div class="right"></div>
+            <div class="description">
+                <h1>Blessing Aniedi <img src="images/wave.png" alt=""></h1>
+                <div id="name">
+                    <div> </div>Product Designer
                 </div>
-           
-                <div class="box">
-                    <div class="left"></div>
-                    <div class="dot"></div>
-                    <div class="right">
-                        <h1>Product Designer</h1>
-                        <p>525System<br/>
-                            Calabar, Cross Rivers state<br/>
-                            2023-Present
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="left">
-                        <h1>Product Designer<br/>Ahead </h1>
-                        <p>Remote/contract<br/>
-                            Nigeria<br/>
-                            2022-2023
-                        </p>
-                    </div>
-                    <div class="dot"></div>
-                    <div class="right"></div>
-                </div>
-                <div class="box">
-                    <div class="left"></div>
-                    <div class="dot"></div>
-                    <div class="right">
-                        <h1>Product Designer</h1>
-                        <p>Brave Achievers Foundation<br/>
-                            Remote<br/>
-                            2022-2024
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="left">
-                        <h1>Professional  Diploma<br/>Dental surgery 
-                            Technician</h1>
-                        <p>Portharcourt<br/>
-                            Nigeria<br/>
-                            2021
-                        </p>
-                    </div>
-                    <div class="dot"></div>
-                    <div class="right"></div>
-                </div>
-                <div class="box">
-                    <div class="left"></div>
-                    <div class="dot"></div>
-                    <div class="right">
-                        <h1>Product Designer</h1>
-                        <p>Our Haven<br/>
-                            2022-2023
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="team">
-        <h1>My Team</h1>
-        <p>Worked With</p>
-        <div class="team_speech">
-            <div class="speech">
-                <img src="images/divine.png" alt="">
-                <p class="name">Sharon Uja</p>
-                <p>I highly recommend Blessing for any role at your company. Her
-                    dedication, expertise, and dedication, expertise, and valuable asset to any team.
+                <p>I'm a UX/UI Designer with a proven ability to design
+                    user-centered experiences that achieve both business
+                    goals and user satisfaction. I possess a strong foundation
+                    in design principles and leverage user research to craft
+                    strategic design solutions. I'm well-versed in a comprehensive
+                    design toolset to deliver exceptional interfaces
                 </p>
+                <a href="./contact.html">
+                    <div class="hero_button">
+                        <p>Say Hello</p>
+                        <img src="images/send.png" alt="">
+                    </div>
+                </a>
             </div>
-            <div class="speech">
-                <img src="images/divine.png" alt="">
-                <p class="name">Sharon Uja</p>
-                <p>I highly recommend Blessing for any role at your company. Her
-                    dedication, expertise, and dedication, expertise, and valuable asset to any team.
-                </p>
+            <div>
+                <img class="hero_image" src="images/blessingim.jpeg" alt="">
             </div>
         </div>
-        
-        <div class="page">
-            <div id="show" class="show"></div>
-            <div class="show"></div>
-            <div class="show"></div>
-            <div class="show"></div>
-        </div>
-    </div>
 
-    <div class="footer">
-        <h1>Blackpride</h1>
-        <div class="footer_navigation">
-            <p>Home</p>
-            <p>About</p>
-            <p>Projects</p>
+        <div class="qualification">
+            <h1>Qualification</h1>
+            <p>My Personal Journey</p>
+            <div class="details">
+                <div class="details_header">
+                    <div class="flex">
+                        <img src="images/education.png" alt="">
+                        <p>Education</p>
+                    </div>
+                    <div class="flex">
+                        <img src="images/experience.png" alt="">
+                        <p>Experience</p>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="box">
+                        <div class="left">
+                            <h1>BYU Idaho</h1>
+                            <p>Heathrow Cyber<br />
+                                Services, UK.<br />
+                                2023
+                            </p>
+                        </div>
+                        <div class="dot"></div>
+                        <div class="right"></div>
+                    </div>
+
+                    <div class="box">
+                        <div class="left"></div>
+                        <div class="dot"></div>
+                        <div class="right">
+                            <h1>Product Designer</h1>
+                            <p>525System<br />
+                                Calabar, Cross Rivers state<br />
+                                2023-Present
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <h1>Product Designer<br />Ahead </h1>
+                            <p>Remote/contract<br />
+                                Nigeria<br />
+                                2022-2023
+                            </p>
+                        </div>
+                        <div class="dot"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="box">
+                        <div class="left"></div>
+                        <div class="dot"></div>
+                        <div class="right">
+                            <h1>Product Designer</h1>
+                            <p>Brave Achievers Foundation<br />
+                                Remote<br />
+                                2022-2024
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <h1>Professional Diploma<br />Dental surgery
+                                Technician</h1>
+                            <p>Portharcourt<br />
+                                Nigeria<br />
+                                2021
+                            </p>
+                        </div>
+                        <div class="dot"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="box">
+                        <div class="left"></div>
+                        <div class="dot"></div>
+                        <div class="right">
+                            <h1>Product Designer</h1>
+                            <p>Our Haven<br />
+                                2022-2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer_social">
-            <div class="socials_box"><img src="images/Vector.png" alt=""></div>
-            <div class="socials_box"><img src="images/Icon.png" alt=""></div>
-            <div class="socials_box"><img src="images/footer.png" alt=""></div>
+
+        <div class="team">
+            <h1>My Team</h1>
+            <p>Worked With</p>
+            <div class="team_speech">
+                <div class="speech">
+                    <img src="images/divine.png" alt="">
+                    <p class="name">Sharon Uja</p>
+                    <p>I highly recommend Blessing for any role at your company. Her
+                        dedication, expertise, and dedication, expertise, and valuable asset to any team.
+                    </p>
+                </div>
+                <div class="speech">
+                    <img src="images/divine.png" alt="">
+                    <p class="name">Emmanuel kefas</p>
+                    <p>She takes ownership of tasks, driving them to completion with professionalism and inspiring team
+                        members to excel.
+                    </p>
+                </div>
+                <div class="speech">
+                    <img src="images/divine.png" alt="">
+                    <p class="name">Divine</p>
+                    <p>Blessing is an exceptional colleague. Her
+                        collaborative spirit and
+                        effective communication skills make her invaluable to any team striving for synergy and
+                        exceptional outcomes
+                    </p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="show"></div>
+                <div class="show"></div>
+                <div class="show"></div>
+
+            </div>
         </div>
-        <!-- <div class="cooperation">
-            <h1>© 2024 Blessing Aniedi Asukwo. Nigeria.<br>
-                Last Modification: 07/20/2024 15:16:14</h1>
-        </div> -->
+
+        <div class="footer">
+            <h1>Blackpride</h1>
+            <div class="footer_navigation">
+                <p>Home</p>
+                <p>About</p>
+                <p>Projects</p>
+            </div>
+            <div class="footer_social">
+                <div class="socials_box"><img src="images/Vector.png" alt=""></div>
+                <div class="socials_box"><img src="images/Icon.png" alt=""></div>
+                <div class="socials_box"><img src="images/footer.png" alt=""></div>
+            </div>
     </div>
     <footer class="cooperation">
-        <p><span id="currentyear"></span> &#128339; Blessing Aniedi Asukwo &#128339; Nigeria</p>
+        <div onclick="scrollToTop()" class="up"><img src="images/up.png" alt=""></div>
+        <p><span id="currentyear"></span> &#128349; Blessing Aniedi Asukwo &#128339; Nigeria</p>
         <p id="lastModified"></p>
-    </footer>
+    </footer> 
+</div>
 </body>
 </html>
