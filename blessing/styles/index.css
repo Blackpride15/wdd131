@@ -167,6 +167,7 @@ a {
     gap: 32px;
     opacity: 0px;
     display: flex;
+    
 
     @media screen and (max-width: 480px) {
         display: none;
@@ -196,7 +197,9 @@ a {
     padding: 10px;
 }
 
-
+#active_link{
+    color: #EBA352;
+}
 
 /* .topnav.responsive {
     display: block;
