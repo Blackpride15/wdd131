@@ -33,8 +33,9 @@
 }
 .about_summary {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap:wrap;
+    padding-bottom: 30px;
     
 }
 
@@ -87,9 +88,8 @@
 
 .about_description {
     width: 395px;
-    left: -1px;
+    left: 0px;
     gap: 30px;
-    opacity: 0px;
     text-wrap: wrap;
 
     @media screen and (max-width: 480px){
@@ -125,14 +125,13 @@
 }
 
 .skill .boxes {
-    width: 300px;
+    width: 600px;
     padding: 33px 49.06px 33px 49.06px;
     border: 1px;
-    opacity: 0px;
     background: #FFFFFF;
     border: 1px solid #0000001A;
     @media screen and (max-width: 480px){
-        width: 90%;
+        width: 92%;
         padding: 20px;
      }
 
@@ -173,12 +172,11 @@
 
 .skill .flex {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: start;
     justify-content: center;
     padding: 64px 110px 0px 110px;
     gap: 48px;
-    opacity: 0px;
     @media screen and (max-width: 480px){
         display: flex;
         flex-direction: column;
@@ -223,3 +221,5 @@ footer p {
     font-size: large;
 
 }
+
+
